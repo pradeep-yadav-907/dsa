@@ -9,7 +9,7 @@ public class spiral_matrix {
 
             // top row
             for (int j = startCol; j <= endCol; j++) {
-                System.out.print(matrix[startRow][j] + " ");
+                System.out.println(matrix[startRow][j] + " ");
 
             }
             // right column
@@ -18,19 +18,19 @@ public class spiral_matrix {
                 if (startRow == endRow) {
                     break;
                 }
-                System.out.print(matrix[i][endCol] + " ");
+                System.out.println(matrix[i][endCol] + " ");
             }
             // bottum row
 
             for (int j = endCol - 1; j >= startCol; j--) {
-                System.out.print(matrix[endRow][j] + " "); 
+                System.out.println(matrix[endRow][j] + " ");
             }
             // left column
             for (int i = endRow - 1; i >= startRow + 1; i--) {
                 if (startCol == endCol) {
                     break;
                 }
-                System.out.print(matrix[i][startCol] + " ");
+                System.out.println(matrix[i][startCol] + " ");
             }
 
             startCol++;
